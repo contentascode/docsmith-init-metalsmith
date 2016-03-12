@@ -2,12 +2,14 @@ language: node_js
 cache: bundler
 sudo: false
 install:
-  - rvm install 2.2.1
+  - "rvm install $(sed 's/ruby-//g' .ruby-version)"
   - bundle install
+after_script:
+  - 'test $TRAVIS_TEST_RESULT == "0" && test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run deploy'
 env:
   global:
     secure: >
-      "ucL0lDQryc04He8qLIsvsYVAMpmj299PhuXBcsRP7MuIsYj3txpmG66aGP6sjZbewh8p8/6lYv5IU5PtG4f950B5qpkWMYrZbQhSdnDS+1wtGNfa88t+a27ZAmvRb8iWkJdNzevUG+OES053uFr9oxd0/zm3+1uBm0PYZBTHrCckpjT4y937lix0QvSRP/mO7s40wQecYuOh8awdkpsMBZ6Zu54YT3CUD07wLPKdGvWD+7kUFFSFgGRR09hhpIWmaAtEJ7+qf2fuYpvapXH5i+NRAAIVGwk7OR6lqV4HmMAQkio1OtZP9r/JQJYmhOSKLgi+zvZFfE7+Yjm+Er0d9DovpPl1xTJWTXDnLvMtccIhVVSsStQYe64PsGHLHAEng30uUBYW+x1z4XI3G5P1OAWNCRrkVtgIhyK3vxNRbTVgy05v7rz8hH+cxvZfa/rtKf48EYiMnOYkB/hSaOeYQ16umYCpErXKJFf1yHBebCXgz9DLK4f0x+vshi/q0CUlz17U3MWCEVbjB1K3C5LswEboUIiimQ7ilgUSvVEmynlHeroczg+0n3r5RMDC6xTKdcTIUdLqhIWsvRfGU1RbyKqW9LtO6939S9ZqGcf8ktDbKgfkXFKrObanTQjyIIGjP2jAeJs35Xt/nNzTleij7LUbNEide7ghDcLbw51NHDI="
+      "EW0tABvIKOkIc36eFLVKuLblZREBQaQGuRYwbivvfTPf1JKhZJa0OoB71sFOWAUllOChS5CuOXm8vJKolTGERYuD86d56y4E6wrvsMrws/8gCB8gWJKFJWrRiDudI5Spur2XVNCLpYCCDjgMdotd9ysBH67RIrYzWeQ1gJITLPFcFYVzXrWBpMsyroyKLWwn56kLzJUairU8xwvqzZJ2nCpywawI0zFPB336rxaOG52XcXwpctAnqGBXy3XaQfldUy8m84cr2nY2JDOMxTgXoMaK5EIEfBcKxUlJOpUuibpaqM7OeOeMXNwgscuTu/zNhJ/RsNJty3mq8wzB9raN412dnGGo7ISpIlz8N4arAqFXh/UfJJgMR9/QwBmrvLZTkj8W/ix+OmXmL8k9gsjvZ2kXpdWvA2a8n/PFSQJUJx19IPZb/3IcFjLOdHvI5zYKNtSuhfHCWKeBldW+/cSpLUBeRRGMwTfjsRIC+EMtXs48A/pMm5F5uzM0tbva90Upw8iyue1uYX7SoW4f4DIGlttp/J4hyWHF3dzxlRltfNlpM1ykmCuiYkre9Rzvebsr9WX8FzCzTtFH2rdLSjwcXRONKB4mXAMAzLhWi3xpKfagyx9ayGSMWwDYCyQXwfQxd4NM9TbPbOXXr3x/+xpb/7PXmCKCSGvaPxQm02oOsVo="
   GH_USERNAME: jmatsushita
   CONFIG_OWNER: contentascode
   CONFIG_REPO: docsmith
