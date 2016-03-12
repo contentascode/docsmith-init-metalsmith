@@ -4,7 +4,11 @@
   "description": "Empty project for docsmith",
   "main": "index.js",
   "scripts": {
-    "test": "bundle exec rake site:deploy --quiet"
+    "clean": "rimraf ../build",
+    "build": "jekyll build",
+    "test": "echo \"Do some validations...\"",
+    "deploy": "npm run build && npm test && npm run deploy-gh-pages",
+    "deploy-gh-pages": "git clone https://$GH_TOKEN@github.com/${OWNER}/${REPO} ../build &&  cp -R _site/* ../build && cd ../build && git config user.email \"$GIT_EMAIL\" && git config user.name \"$GIT_NAME\" && git add -A . && git commit -a -m \"Travis build $TRAVIS_BUILD_NUMBER. Updating to #{OWNER}/#{REPO}@#{sha}.\" && git push --quiet origin master > /dev/null 2>&1\n"
   },
   "repository": {
     "type": "git",
