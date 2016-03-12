@@ -1,0 +1,19 @@
+{
+  "name": "docsmith-init",
+  "version": "0.0.1",
+  "description": "Empty project for docsmith",
+  "main": "index.js",
+  "scripts": {
+    "test": "bundle exec rake site:deploy --quiet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contentascode/docsmith-init.git"
+  },
+  "author": "Jun Matsushita (iilab.org)",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/contentascode/docsmith-init/issues"
+  },
+  "homepage": "https://github.com/contentascode/docsmith-init#readme"
+}
