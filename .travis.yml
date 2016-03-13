@@ -5,7 +5,7 @@ branches:
   except:
     - gh-pages
 install:
-  - npm i pm2 http-server -g
+  - npm i pm2 http-server broken-link-checker -g
   - "rvm install $(sed 's/ruby-//g' .ruby-version)"
   - bundle install
 deploy:
@@ -18,4 +18,4 @@ env:
     - CONFIG_OWNER=contentascode
     - CONFIG_REPO=docsmith-init
     - secure: >
-        "LSiwsYUC0NubtgwZleBioO736wt2bGXJceUFRm53shBgG0SMAS44ZeGl6j3XaOv5LyJrElRj1qhZXVtgxCk96orte0ixQj+/bIqyA0WChF/U1bOAEPyWM8XgUcLTUKHhKz0vsoABp/CtlEmV9MeugWniuf4vtwRIFiUkIEEFRiTWdi0GnRDQeEyqzhXYftRL4uTmZvg4g+2vN9Mlg7aKnb2P5s7Kumb9YV3AdJSjY7uhCRj+nVvkwfVgtGV/jNCHTFceP1vciU0NHCeJSP9PUYd3SGsl8Adr9tV3cmfeqUjHvqikmeyBNbb2uiarQk4pQi/IuhzIX6R9r5U8S+VHJtL21o30OWh4ojgDMykGiGVCDJJLVHdxrwwghOQLqtqw/lwYe1IOkLa065yf9sDkJcyDJhNa6DigVKzAN0kKmBnbBXjllZSIEHMmMghEEVrfqAszlxrrDBqvhueVBxlMiyWxlTf9/3OFZSf5PYCX1AJIzgds1XQT4ucjyYYPQXRpDgUUB67/PVIlwxjBF0fJcJIaM/mFvvwgjeGVn5Vqd81nV9uDVX9QlYBCRkDHEyGh1LocaK9koqOO/dpg5yZBJWfvCpwWxAF/0lkMIaU2F1kqpbqGMyCNwxc+FFR4BlcbrPo05TOK3JKg4xb5va1f+EbInziFZQh/vw3l5Aig07U="
+        "gXsd+FYk4h35PvZYu/ZoGtuIn0CYxi/yLXUpPAv/NHg1UTfFkG9DOwNVejsq9kt9AQSYy0C/tJvnD/DR1VjRaThQbY67e48ikBAGsmg95rC7IMoPOd5ncK6I1mV6N1coM7CimX4chrWp9frnctroV2DDE0X2N0SfiExT+7+OW+l10qYCcd0zP1Y+wsQ+Pc+8cVkgD+FZh5DulEh6cqBdOuDRb9xk6OmdSbZRUcHlSWZtnHpeLNALrYPIUFZVOUQZ3p/3zDKvPpkSdaa0rqVws/hEsQ6KM6Q01r/FHUYbe5jlkbOA12nVGdkW0405byVdX/CHZfzq8oBVnrnXio//MKuUFk3tUVMwXzj12yLwehEvY/hJkQKy8aTYoIrR8aQBFvT7KAOCaNvxIjKTYpzSc0PgUTK6xoNoR5FRTXC/3odPqQmrCyj25/Qa5trrxTKo2LeFeK7ZSkMekWu1CRxB0saDN5CDcTQyXGdBOQ2VNY1+UCkbqkq38q6EwUeUpsjtBdKv79ke3I1P2+p23YMHTEl4BpMn3HgRKLeBjpzUZrEfyczgtG9vBcGBhRfqyk+U8aKcOJ5WC08pxaofAlc9ZsE5ejHhiPsIdjDs0ew4fUTi0zt8wjgG18j9RCSR/7X/kEb83VU/HDwLj/4gGtl9uPlqSNh7Tb5jfz9v88hXQic="
