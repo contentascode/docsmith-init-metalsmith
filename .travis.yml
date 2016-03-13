@@ -1,6 +1,8 @@
 language: node_js
 cache: bundler
 sudo: false
+node_js:
+  - '4.2'
 branches:
   except:
     - gh-pages
@@ -18,4 +20,4 @@ env:
     - CONFIG_OWNER=contentascode
     - CONFIG_REPO=docsmith-init
     - secure: >
-        "gXsd+FYk4h35PvZYu/ZoGtuIn0CYxi/yLXUpPAv/NHg1UTfFkG9DOwNVejsq9kt9AQSYy0C/tJvnD/DR1VjRaThQbY67e48ikBAGsmg95rC7IMoPOd5ncK6I1mV6N1coM7CimX4chrWp9frnctroV2DDE0X2N0SfiExT+7+OW+l10qYCcd0zP1Y+wsQ+Pc+8cVkgD+FZh5DulEh6cqBdOuDRb9xk6OmdSbZRUcHlSWZtnHpeLNALrYPIUFZVOUQZ3p/3zDKvPpkSdaa0rqVws/hEsQ6KM6Q01r/FHUYbe5jlkbOA12nVGdkW0405byVdX/CHZfzq8oBVnrnXio//MKuUFk3tUVMwXzj12yLwehEvY/hJkQKy8aTYoIrR8aQBFvT7KAOCaNvxIjKTYpzSc0PgUTK6xoNoR5FRTXC/3odPqQmrCyj25/Qa5trrxTKo2LeFeK7ZSkMekWu1CRxB0saDN5CDcTQyXGdBOQ2VNY1+UCkbqkq38q6EwUeUpsjtBdKv79ke3I1P2+p23YMHTEl4BpMn3HgRKLeBjpzUZrEfyczgtG9vBcGBhRfqyk+U8aKcOJ5WC08pxaofAlc9ZsE5ejHhiPsIdjDs0ew4fUTi0zt8wjgG18j9RCSR/7X/kEb83VU/HDwLj/4gGtl9uPlqSNh7Tb5jfz9v88hXQic="
+        "TfFRvAouOY1PSkQadKzRSXExqRpgQOrXbrjuBfpBqtW9KT3phEMzaj/p7uLkMNgoMWceNCPqxvJoVPkHEv6kGMABGZ1EYwuIYsKsoBNqUjpT7E0EGVb1/57dd5G1Ycq/pxeXjaBQ0+i+YJh/xknznJR7zVrZc6HpNZTluGUaUpNJZB/MDPTzVymtdpkwI8vR1448FzRx+/7ObsFOKBmk+Do4zi1XQZojwdLbyaELFD/33fvauaeovENmJChC4eKtIkXWvKiPOihpMEJ67kL+XvaZDu1ppxZv0QuwIs1hQMEqJ6BJf/ez7bNP7VkPCWORcA8aFA7WQpgif5XPjv3XtedX2aFjkvoP3aQWEvk+NWp6+jhI/iI0WM6yg6mq2Rk+9GJQtFm03ge9AjuCYWvskHxE318kFa5i/kCzyU8ly9mncREeDyInyZmiQveL83ZbljqKhsENkPa/HArL3I5JvpwcG5lA1hHS7pBU55Cpv8VeSDpCYHYRe1yejNVVIqLnX2qMguueP2ROFO1B+fB5OQlD6z2adxtMtXXB8pxM2M88KtbovLl+jwHWCnfjMyu8M8200nrdQ6RhuGrmfvoq2l5WlhCFH4P1ILJWpKuQ67h468Y8ymNTAxpPlFmCeyzzRralJA5C+1INNvOJKJBLilpdPU65SCZbjiAyHZ4Gi5M="
