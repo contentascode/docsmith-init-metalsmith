@@ -5,6 +5,7 @@ install:
   - "rvm install $(sed 's/ruby-//g' .ruby-version)"
   - bundle install
 deploy:
+  skip_cleanup: true
   provider: script
   script: npm run deploy
 env:
@@ -13,4 +14,4 @@ env:
     - CONFIG_OWNER=contentascode
     - CONFIG_REPO=docsmith-init
     - secure: >
-        "FxuWz0OE+LSRiekew1S2bqA8W3JlvZ7kjViRjIbSEFVosSeol/gm75kyKqmceJRaNsfMOqggwsJgbSj2OHg85MvigR6SH5OfNXvBviOqwK0SaeVbSH6Y+MIpOctY9xF/AuhSafYdW2o32Rgnn1yV8xAB5Dm9t0Q/PywyffHWeal2g+urQpffvzpSOhCFBoGrZguiMVjHyc0d5YiyLFaghVUneOwh4opRhBuo0x+dunqjWcjyd0FtBZSGDAYnVcKhGkIwt/48uT3MXDUbrw43+9mjRpfgxZ6JSNIk15X8kjjhdntIB2pq19D7jS4dKWPdJUiPOpDP4Y2gWKv5ejH0xtDXctly4oO7rKQIHEemZXpxXWXclaXQ9aNzg395972U+Zv2zeFnef7aJTucxVu46ZIWzs4f9e1oPVoZtDp/eootrbBJUM05WNfqhYuzIaWmk7A8ptx4ynOTLiwks9/5V8C9R4aoeJuTzB2mCeVqwP0TJF2sGUKIzo2wdGHQw4uo4l/SDvbehszRCfIg6pMqfzQ5gknxI2jeH3g2s5DcICc906IABzuz4pJCX55lBTEz+p1ZI5dlYgl3YEbsamMeCUPEBHfu/+o39J/QB0XsN9Qp65Ay1t6io1R4lrRIQN6qYQixZZ9V6UAPUprfCVt/JWzwp41N6aIa3XgSbivP3NY="
+        "KAaH8Lb9v/4RgU6qtXKNTgvfHtqh2cC7+8ZeVycY+n3EIb/PFBClVM58q3KCM87oPKStlnq2NMPqksnr4FPErhFAKKRQmwqzw+cWBmqS15aCIe2nu+02Wo4EiJIjBBRzSh+ij/VCNC2KZop8Fu87zfRhbv7kyqF19zzhERlxxDAFqcPeefdRy1AhqwC+Tvvlb06J5IMiiIjTp7p8HkbFLUM5MExj8pXJfTH2Uhma3HMTxYWyq544BFJgRSqhlWgr3syg7sj9EpjQSotpuTqgiE3BVKMJoaitA97L3v2LHRxanun8G1Sb1KsixSEn6LWYHAs3HzA1f55G4jrOyBtpTRzns1RC9+bam45b2CoHO1h7eKuAd8/LDv+eq76rhDXSUDUFvmtVvb4TINdxLmEnDabFnKtw/1shgvlgHVQv7ztXpw4I7mTct/Yz+8XTeMvfH7fkAeCj9yeW33mcZnHLbwXy/olz+3WyOP2bWhSB1D9Gl9xaznVJ23PxZKNrCHNrmOzq9bxEQaXR7nH+3f59DfcFK/XiP0tSmTkcjqdlXMOgXVuWt6sb9Uz52wmKStwpMFOPm11I2C018KgT0ZkYhC4UxZXeooQll9OcUIPk/hUnB7fern3QYVfVpoq8/jF0y8eQneVPy5LwXvDIgiGFKF7hPJ6wiqFIF/OGFBLIT1g="
