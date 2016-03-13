@@ -4,12 +4,13 @@ sudo: false
 install:
   - "rvm install $(sed 's/ruby-//g' .ruby-version)"
   - bundle install
-after_script:
-  - 'test $TRAVIS_TEST_RESULT == "0" && test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && npm run deploy'
+deploy:
+  provider: script
+  script: npm run deploy
 env:
   global:
     - GH_USERNAME=jmatsushita
     - CONFIG_OWNER=contentascode
     - CONFIG_REPO=docsmith-init
     - secure: >
-        "qScT6z/MeYb9Xx1sgptUpZEum3QJGCfOz4eIA/xEAVF1/aixvg2nwJT5isk2rRLD+PhBOXc6yd3wmAMoPYomTvt+gIfAMb723+z76zAUqNvZ4GZxl+EA6vuEyWQkcc+5KNAzUw8vN1k9Kk/X8ED6V+1ESq8n0l9nDiR6iP82J8rdo0ZcPwiIbUETi4nJMaok3+qJu3LNe8PHOIpJzSs9d9Hu2ldxHDSjp18qZggb/6ZRMZrGow0M14E51+gIC0bROhE8zKSiocp8OWe0PC39MugvNpO8YpknujgaXPaaqIzqq2k9PWDsqRkISCiCPbTatTN4cNkgnk5S849/W4TXwY9INyhBA7WIB2JzvuGUXH7WalrnVDLfNWLrjOIkrCM/nr+8BJvIVeC1uuXvmHADPORmD/T6qNDK0O4/3kZobsxplKEaT/qf/dUimfWqe9aWw9Frw94iKKCPc6lzWpB7t0GEptfHpxHQlFb0pqBu+20MM2GeSX472cTxV/xUpgZ37rT3zCjP01JRfKuM3Aqgli0tmIWQwtVpLs3Ig9hImLYXIP4LLNMtKAEt6KcZzJnTSwMtTk/NRgEZaB/LlCSoYbZ9Er0AlkHef4KE9zEvvbd77dXr92EJfhO7MsB74PFqJerIMW5G8HPt2ispwD5fsCyKRyvkjqJpezMzaxlEAH0="
+        "FxuWz0OE+LSRiekew1S2bqA8W3JlvZ7kjViRjIbSEFVosSeol/gm75kyKqmceJRaNsfMOqggwsJgbSj2OHg85MvigR6SH5OfNXvBviOqwK0SaeVbSH6Y+MIpOctY9xF/AuhSafYdW2o32Rgnn1yV8xAB5Dm9t0Q/PywyffHWeal2g+urQpffvzpSOhCFBoGrZguiMVjHyc0d5YiyLFaghVUneOwh4opRhBuo0x+dunqjWcjyd0FtBZSGDAYnVcKhGkIwt/48uT3MXDUbrw43+9mjRpfgxZ6JSNIk15X8kjjhdntIB2pq19D7jS4dKWPdJUiPOpDP4Y2gWKv5ejH0xtDXctly4oO7rKQIHEemZXpxXWXclaXQ9aNzg395972U+Zv2zeFnef7aJTucxVu46ZIWzs4f9e1oPVoZtDp/eootrbBJUM05WNfqhYuzIaWmk7A8ptx4ynOTLiwks9/5V8C9R4aoeJuTzB2mCeVqwP0TJF2sGUKIzo2wdGHQw4uo4l/SDvbehszRCfIg6pMqfzQ5gknxI2jeH3g2s5DcICc906IABzuz4pJCX55lBTEz+p1ZI5dlYgl3YEbsamMeCUPEBHfu/+o39J/QB0XsN9Qp65Ay1t6io1R4lrRIQN6qYQixZZ9V6UAPUprfCVt/JWzwp41N6aIa3XgSbivP3NY="
