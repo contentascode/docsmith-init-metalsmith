@@ -1,11 +1,14 @@
 language: node_js
-cache: bundler
 sudo: false
 node_js:
   - '4.2'
 branches:
   except:
     - gh-pages
+cache:
+  bundler: true
+  directories:
+    - node_modules
 install:
   - npm i pm2 http-server broken-link-checker -g
   - "rvm install $(sed 's/ruby-//g' .ruby-version)"
@@ -20,4 +23,4 @@ env:
     - CONFIG_OWNER=contentascode
     - CONFIG_REPO=docsmith-init
     - secure: >
-        "woeAhkF4qaAMQBT0U7KtjmtoMcc4G3RanGZNUHDsVMnHe0bulh5kOu4xOgRsKaEc4hxm2QgfXCcqfTcUTVYsXU/jjF22T6JA/GWWuLq8FSjxIV4l46SZFtNpcQxpJlX6veEwrt72BTqfzBcmr/ZQgIC8hvN0dWhqFA1Bc1wb7WcSwU/joCkSSZhjNL4tipN6BQEDPXYO4zYUvmalm774fOw8wkEB9FXb72FeipHti9zgoGfUHKV40MBhyYB7ymAhi8H/BgT9FqMJJUpAM7ewvXXPcArCHT7SmGDwHI1/9s+Y59fqjTW7IGtdLh3lhltl/yr1GhWw1MnRG2y0PilcmYmtRDQPJvCLHEViZ8C+RJPsTEo89Uz4+7xW4Y9MnmIjFdODx13/W9NZCIfno6qxaGH914/4KCy8hSFkhnrjmhThjVMedGMtLY+46cyw9LocVHCrGkuE76DWdMo/IS4aXpwFXECDXFIvvVdGKpLFkLJrt8yU/+i++CbYpnkwjx8VhhlMg/m+ANhylYNrsvBGqOT6S8Xohskx6/AKYdnOEOWUINfTKBHnyG6KZCoBQTR4qbo94C7M1ouXa1t7jms+GsRktanQEvTM6EckEZNqJXVcHVWwaAb6GNBy7JSBxRLFaFfDJnoenblgQO+o0FCmkItr5Kz7E7mIq8IHqvnUXkw="
+        "CL0M1x1qzkMsaC4b3rax0LeOXnFba1GhM9Rcy80XkeIlSKZPKvYgtxL6tYoOXIve+sIEAyzC8hO0rsdjMwatDptDM5XpiFxWgi6VaKl1NwIW6yRvcOPneX/A05VJZU/KALoyhOpEtwKnf9VUWvuTQkjCcUPlYvTzaUnlEvTyNHqtiGhjJFw++K0devxSLdYmLWPsYcZheqRqlnFiz4nSQh+OjYuh2MKUM0kiKYzmSZKGym7gMlGeR5Kdk3sQ/m4ly2TEIgRioA8rNq1ghTJeonVRpI01qUwdFR3708vn5jIcevxAbkjCwegExgazImMcA3A9jQhmiMKnrd3WJXuUKLD9XZLsTsX9DGoB2faktDaexTxm5i9VtRKfC3R+29fUEoDEsmZcdLcunL7c10wtk1css+zm7j5K3MmpvmBeJab0isqYZqz1v1DD6toNONtHv6/ieapHYHSAgIwnvKeCjd9u7SXmrpVKdTqxnx1YKq3iopsBxITMn/h5W5DO2Tu/al8imwOdJ14sZ2SknAPl1DU0JDZGgrr2YMFDlsWjmnxOLEwFomB4SV+uvmLSYNoW1DrI6jX6CCECSmkLT4W67MrxK3xZ3RoCs9OheL97I/pLl0taWmbFMEMPvm0rHIVm3zmVwFAKAnpOBXEVqmAQuwx5mxp5i2nZyiqcsfxXJTw="
