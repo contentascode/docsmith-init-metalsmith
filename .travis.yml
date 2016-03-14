@@ -11,7 +11,7 @@ cache:
     - node_modules
     - /home/travis/.rvm
 install:
-  - npm i pm2 http-server broken-link-checker -g
+  - npm i pm2 http-server contentascode/broken-link-checker -g
   - "rvm install $(sed 's/ruby-//g' .ruby-version)"
   - bundle install
 deploy:
@@ -24,4 +24,4 @@ env:
     - CONFIG_OWNER=contentascode
     - CONFIG_REPO=docsmith-init
     - secure: >
-        "UYswFXwWNmy2GCKU305xsdZJmYTWGAOuIt78EeBOgZBCEO9jEU7PgufqLtgJpfE/QB2/7eBCNDdcdyMnVbxkWQ6n2itKzo2kaxscstA8lbk6xqKOJ7RGnrHkg/w+8VVIlh2ugl9dYuiqLVHAk8LEkyP1uDDk0BkSMTtG8fprHB4Vy3Ioza1+rvHHX2zavMnoTnE/L4Lhnb9fQGGs32eynIwzUe1kqkbkvwk1js5mlQo3Ha8nzIWbVUZ8QuXDjBv+lAZKmji0MNaQvXzYLGddOYdAr8MqauWGs+B0cLVxaZYMoop355h3koQKUINURUyFXu6jArp3FY225EV7Mph50izJ8c0WxVohqJHgzFufVz3D2/52ffCdTXBDrSQdDlXoAUmcv66QUMdg9PBvh/Yo91W6mbzhCeMZjd/PaZse4sjjSkGwDkyf4OAqB3gpaI4mTui1vKAFHeiuwYMK1YyjNReZxKIyRsTBt/dAqNrDih9z0f+uY1uNIcvik/8S7ZrAe+W4L4Q0dbUW+RzYcqyGf95ZTfNgg5YhRzQIZWM84KD5QbjPhpUMfyTgYFeY96q1gyoubdM7qezq3XHQ4iSgcQuqWDy7hFfX82R0fRT5c2uLDN0MSaYGLIWE8C6uxgZgr91t/u/lhVLX+C+F0QEmpdgmDqHNBfxgkIKfw/310o8="
+        "ZXh1G3FFWkbVu1YwXt95jj7ykTa0xtIgaAxOhYjZ2UX5CUt8MhsAqcf9SxV2VLz4e3cCgl5hJKjLFDK99WtZB03x6EnX7jfIkK8F/joGYk4kzjLgIYnQ6wPZmrfChYT2Y0i9Ko7K1Sh9sBuyEwmuVrwrmLQWpZHOc6kCgSEVsc+F1p/t3kGNQO1SnVePCNnNtyX9ZDbMqrdI9KCw8Y3Y39NUryhQ3nj44g58ek0CfVk4T0rjLC13DFBggav7ufBDSJ/vBAjh/rKo0yliuFSHDPygC2JANR2f7aZ20j7505VjkFOjUXZbJqTtSpimLd2fDt4LT5CcZ8gf9YbLhkTxTHgWb+h1ELVWRTubMeYMWCmeuxHP9luTUggB6on0RzSXIM5LeC5PkJo41b6kRO4DrQ3urFMJrykbf1XnuntkJ6z20TL50/Y62jLrFApn5+/WtBaDI9tu4KL/Cv8ga0wOzOkF+mbpxs0EnQlEkXafa/ucHTeu7nScQQe8NbiGa+wk0Wu24w4Mko3yW9qZFt5KO72YgVMwRmBcl+i+RXKq6e0jQCwhj4ogIqbzgLNcn2cI4tsb5OHdPtY4VcPY6abjJF2Oad1l4ukczis2bzQamUw1BsTiKiI9xAE9sAYdlTyVBeRjKqx34XLz2Nd328QH7ut4KPmGENtpRILCkdGB3IY="
