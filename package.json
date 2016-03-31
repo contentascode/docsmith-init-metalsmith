@@ -23,5 +23,8 @@
     "url": "https://github.com/contentascode/docsmith-init/issues"
   },
   "homepage": "https://github.com/contentascode/docsmith-init#readme",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "metalsmith": "^2.1.0"
+  }
 }

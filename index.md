@@ -10,5 +10,5 @@ title: Home
 It aims to **make content authoring and management benefit from software engineering collaboration best practices**.
 
 This is an empty site created via `docsmith init`. In docsmith version 0.0.2 this initialises a content as code site with the following defaults:
- - jekyll site 
+ - metalsmith site 
 
